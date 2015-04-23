@@ -29,7 +29,5 @@ public class Hhdb extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
-    public void insertToPlan
-
 
 }
