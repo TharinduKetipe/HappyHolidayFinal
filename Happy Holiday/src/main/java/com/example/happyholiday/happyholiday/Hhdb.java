@@ -9,19 +9,27 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class Hhdb extends SQLiteOpenHelper{
 
+    SQLiteDatabase dbase;
+    Context con;
+
     public Hhdb(Context context) {
-        super(context, "hh.db", null, 1);
+        super(context, "hhdb.db", null, 1);
+        con = context;
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+    public void onCreate(SQLiteDatabase database) {
+        //create plan table
+        String create_plan_query = "CREATE TABLE plan (p_id INTEGER PRIMARY KEY NOT NULL ,p_name VARCHAR(20),p_date date , p_time datetime , p_desc varchar(50))";
+        database.execSQL(create_plan_query);
+        dbase=database;
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
+    public void insertToPlan
 
 
 }
