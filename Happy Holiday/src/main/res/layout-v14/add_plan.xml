@@ -101,7 +101,7 @@
     </LinearLayout>
     <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="71dp" android:id="@+id/ap_grid_1" android:focusable="false">
+            android:layout_height="71dp">
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
