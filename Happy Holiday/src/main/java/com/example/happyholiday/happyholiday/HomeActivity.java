@@ -1,9 +1,12 @@
 package com.example.happyholiday.happyholiday;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class HomeActivity extends ActionBarActivity {
@@ -11,7 +14,15 @@ public class HomeActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_plan);
+        setContentView(R.layout.home);
+        Button add_btn=(Button)findViewById(R.id.hm_bt_ad_pln);
+        add_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent p= new Intent(HomeActivity.this,add_plan.class);
+                startActivity(p);
+            }
+        });
     }
 
 

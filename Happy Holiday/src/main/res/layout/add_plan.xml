@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dip" android:layout_gravity="center_horizontal"
             android:layout_weight="0.10" android:id="@+id/apl6">
-        <TimePicker
+        roid<TimePicker
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ap_pln_time"/>
@@ -99,7 +99,8 @@
                 android:id="@+id/ap_ti_desc" android:editable="true" android:gravity="fill_horizontal|center_vertical|center_horizontal"
                 android:textSize="50dp"/>
     </LinearLayout>
-    <GridLayout
+    <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="71dp" android:id="@+id/ap_grid_1" android:focusable="false">
         <Button
@@ -116,6 +117,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add"
-                android:id="@+id/ap_bt_add" android:layout_row="2" android:layout_column="3"/>
-    </GridLayout>
+                android:id="@+id/ap_bt_add" android:layout_row="2" android:layout_column="3"
+                />
+
+    </LinearLayout>
 </LinearLayout>
