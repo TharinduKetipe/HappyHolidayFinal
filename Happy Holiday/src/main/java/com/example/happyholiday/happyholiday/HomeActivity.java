@@ -19,10 +19,19 @@ public class HomeActivity extends ActionBarActivity {
         add_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent p= new Intent(HomeActivity.this,add_plan.class);
-                startActivity(p);
+                Intent ap= new Intent(HomeActivity.this,add_plan.class);
+                startActivity(ap);
             }
         });
+        Button view_btn = (Button) findViewById(R.id.hm_bt_vw_pln);
+        view_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent vp = new Intent(HomeActivity.this, view_plan.class);
+                startActivity(vp);
+            }
+        });
+
     }
 
 
