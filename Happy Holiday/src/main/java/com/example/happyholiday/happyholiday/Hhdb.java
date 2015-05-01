@@ -2,6 +2,7 @@ package com.example.happyholiday.happyholiday;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -24,6 +25,7 @@ public class Hhdb extends SQLiteOpenHelper{
         String create_plan_query = "CREATE TABLE plan (p_id INTEGER PRIMARY KEY NOT NULL ,p_name VARCHAR(20),p_date VARCHAR(20) , p_time VARCHAR(20) , p_desc varchar(50))";
         database.execSQL(create_plan_query);
         dbase=database;
+
     }
 
     @Override
@@ -47,5 +49,13 @@ public class Hhdb extends SQLiteOpenHelper{
 
 
     }
+    public Cursor getAllPlans(){
+        SQLiteDatabase database = this.getReadableDatabase();
+        String select_all_plan_query = "SELECT * FROM plan";
+
+        Cursor cursor = database.rawQuery(select_all_plan_query,null);
+        return cursor;
+    }
+
 
 }

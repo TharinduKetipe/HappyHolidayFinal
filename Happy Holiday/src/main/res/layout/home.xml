@@ -12,10 +12,73 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_weight="0.28">
-        <CalendarView
+
+        <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/calendarView" android:layout_gravity="center_horizontal"/>
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+            <TableRow>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_1"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_2"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_3"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_4"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_5"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_6"/>
+
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_7"/>
+            </TableRow>
+            <TableRow>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_8"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_9"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_10"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_11"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_12"/>
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_13"/>
+
+                <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/cal_day_14"/>
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
     <LinearLayout
             android:orientation="vertical"
