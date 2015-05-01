@@ -1,6 +1,7 @@
 package com.example.happyholiday.happyholiday;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -23,6 +24,15 @@ setContentView(R.layout.add_plan);
         Button pln_bt_home = (Button) findViewById(R.id.ap_bt_home);
         Button pln_bt_add = (Button) findViewById(R.id.ap_bt_add);
         Button pln_bt_cancel = (Button) findViewById(R.id.ap_bt_cancel);
+
+
+        pln_bt_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent hm = new Intent(add_plan.this, HomeActivity.class);
+                startActivity(hm);
+            }
+        });
 
 
       pln_bt_add.setOnClickListener(new View.OnClickListener() {

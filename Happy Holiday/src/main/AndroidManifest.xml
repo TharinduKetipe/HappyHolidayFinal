@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".add_plan"></activity>
         <activity android:name=".view_plan"></activity>
+        <activity android:name=".Directions"></activity>
+        <activity android:name=".reservations"></activity>
         <meta-data
                 android:name="com.google.android.gms.version"
                 android:value="@integer/google_play_services_version" />
