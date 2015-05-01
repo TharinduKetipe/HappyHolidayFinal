@@ -35,9 +35,10 @@ setContentView(R.layout.add_plan);
                 String pln_time = pln_time_tp.getCurrentHour() + ":" + pln_time_tp.getCurrentMinute();
                 String pln_desc = pln_desc_et.getText().toString();
 
-                Toast.makeText(getApplicationContext(), "inserted", Toast.LENGTH_SHORT).show();
+
 
                 hhdb.insetToPlan(pln_name, pln_date, pln_time, pln_desc);
+                Toast.makeText(getApplicationContext(), "inserted", Toast.LENGTH_SHORT).show();
 
 
 
